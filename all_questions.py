@@ -14,10 +14,10 @@ def question1():
     answers["(d)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) explain"] = "Mutually exclusive rules mean that no individual can satisfy more than one rule simultaneously. However, in this rule set, a person could satisfy multiple rules. For example, a person can be both a homeowner and have a low annual income, satisfying both Rule 1 and Rule 3."
-    answers["(b) explain"] = "An exhaustive rule set would cover all possible combinations of attribute values, ensuring a classification for every conceivable case. In this set, there are combinations of attribute values that are not covered by any rule. For instance, there is no rule for a person who has a high annual income and is currently employed, or a person who is married but does not fit the description of Rules 6 and 7."
-    answers["(c) explain"] = "Ordering might be needed if the system is designed to stop at the first rule that applies. Since the rules are not mutually exclusive, the order in which they are applied could affect the outcome. For instance, if a person is a homeowner and has a medium income and is currently employed, both Rule 1 and Rule 5 apply. If Rule 1 is checked first, the person will be classified as DB = Yes, but if Rule 5 is checked first, the classification would be DB = No."
-    answers["(d) explain"] = "A default class is needed because the rule set is not exhaustive. There are possible scenarios where none of the provided rules apply, and without a default classification, such cases would be left unclassified. A default class would ensure that every individual is classified, even if none of the specific rules apply."
+    answers["(a) explain"] = "Mutually exclusive rules mean that no individual can satisfy more than one rule simultaneously. However, in this rule set, a person could satisfy multiple rules. For example, a person can be both a homeowner and have a low annual income, satisfying both Rule 1 and Rule 3"
+    answers["(b) explain"] = "An exhaustive rule set would cover all possible combinations of attribute values, ensuring a classification for every conceivable case. In this set, there are combinations of attribute values that are not covered by any rule. For instance, there is no rule for a person who has a high annual income and is currently employed, or a person who is married but does not fit the description of Rules 6 and 7"
+    answers["(c) explain"] = "Ordering might be needed if the system is designed to stop at the first rule that applies. Since the rules are not mutually exclusive, the order in which they are applied could affect the outcome. For instance, if a person is a homeowner and has a medium income and is currently employed, both Rule 1 and Rule 5 apply. If Rule 1 is checked first, the person will be classified as DB = Yes, but if Rule 5 is checked first, the classification would be DB = No"
+    answers["(d) explain"] = "A default class is needed because the rule set is not exhaustive. There are possible scenarios where none of the provided rules apply, and without a default classification, such cases would be left unclassified. A default class would ensure that every individual is classified, even if none of the specific rules apply"
 
     return answers
 
@@ -51,8 +51,8 @@ def question3():
     answers["(c)"] = "no"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = "This means that each rule uniquely identifies a different class without overlap. For example, Rule 1 identifies Birds based on specific attributes that do not overlap with the attributes used in Rules 2, 3, or 4 for identifying Fishes, Mammals, or Reptiles, respectively."
-    answers["(b) example"] = "An exhaustive set of rules would cover every possible attribute combination that a vertebrate in the data set could have. In the provided rules, there are no conditions set for amphibians, and there could be vertebrates that do not fit any of the rules provided."
+    answers["(a) example"] = "This means that each rule uniquely identifies a different class without overlap. For example, Rule 1 identifies Birds based on specific attributes that do not overlap with the attributes used in Rules 2, 3, or 4 for identifying Fishes, Mammals, or Reptiles, respectively"
+    answers["(b) example"] = "An exhaustive set of rules would cover every possible attribute combination that a vertebrate in the data set could have. In the provided rules, there are no conditions set for amphibians, and there could be vertebrates that do not fit any of the rules provided"
     answers["(c) example"] = "Since the rules are mutually exclusive as indicated in the answer to the first question, no vertebrate could be classified under more than one rule, thus the order of rule application does not matter. Each vertebrate will be classified under the first rule that applies to it without any other rule conflicting"
 
     return answers
@@ -61,16 +61,16 @@ def question7():
     answers = {}
 
     # bool: True/False
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = True
+    answers["(b)"] = True
+    answers["(c)"] = False
+    answers["(d)"] = False
 
     # explain_string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "The back-propagation algorithm indeed uses the gradients of weights at the K+1th layer to compute the gradients at the kth layer.This is because back-propagation works by first computing the output error and then propagating this error backward through the network to update the weights"
+    answers["(b) explain"] = "This process occurs through a forward pass, where each layer's activations are calculated based on the activations of the preceding layer and the associated weights and biases"
+    answers["(c) explain"] = " The vanishing gradient problem refers to the situation where gradients become very small, effectively preventing the weights from changing significantly. This problem can slow down training or cause it to converge prematurely"
+    answers["(d) explain"] = "If an ANN model perfectly classifies all training instances at a given iteration, it means the loss function has reached a minimum for the training data. While the gradients of the loss with respect to the weights might be very small (since the model is performing well on the training data), they are not necessarily zero"
 
     return answers
 
