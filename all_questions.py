@@ -119,7 +119,7 @@ def question9():
 
     # explain_string
     answers["(a) explain"] = "Since the classes are well separated, the nearest neighbor to a query point is very likely to be from the correct class. Using K = 1 minimizes the risk of including neighbors from the other class, which could occur with a larger K even in well-separated data due to random variation."
-    answers["(b) explain"] = "As we can see the data points are not easily separable, we use larer K to reduce the noise which could be better as it would help in making a more generalized and noise-resistant classification."
+    answers["(b) explain"] = "As we can see the data points are not easily separable, we use larger K to reduce the noise which could be better as it would help in making a more generalized and noise-resistant classification."
 
     return answers
 
@@ -128,54 +128,54 @@ def question10():
     answers = {}
 
     # float
-    answers["(a) P(A=1|+)"] = None
-    answers["(a) P(B=1|+)"] = None
-    answers["(a) P(C=1|+)"] = None
-    answers["(a) P(A=1|-)"] = None
-    answers["(a) P(B=1|-)"] = None
-    answers["(a) P(C=1|-)"] = None
+    answers["(a) P(A=1|+)"] = 0.6
+    answers["(a) P(B=1|+)"] = 0.4
+    answers["(a) P(C=1|+)"] = 0.8
+    answers["(a) P(A=1|-)"] = 0.4
+    answers["(a) P(B=1|-)"] = 0.4
+    answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = None
+    answers["(a) P(A=1|+) explain your answer"] = " There are 5 positive instances, where A=1|+ is at 3 instances (2,5,10), hence the answer will be 3/5=0.6"
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = None 
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    answers["(b) P(+|R)"] = 0.857
+    answers["(b) P(R|+)"] = 0.192
+    answers["(b) P(R|-)"] = 0.032
 
     # string, '+' or '-'
-    answers["(b) class label"] = None
+    answers["(b) class label"] = '+'
 
     # explain_string
-    answers["(b) Explain your reasoning"] = None
+    answers["(b) Explain your reasoning"] = "The likelihood of the sample belonging to the class labeled '+' is greater than its likelihood of belonging to the class labeled '-'"
   
     # float
-    answers["(c) P(A=1)"] = None
-    answers["(c) P(B=1)"] = None
-    answers["(c) P(A=1,B=1)"] = None
+    answers["(c) P(A=1)"] = 0.5
+    answers["(c) P(B=1)"] = 0.4
+    answers["(c) P(A=1,B=1)"] = 0.2
 
     # type: string, 'yes' or 'no'
-    answers["(c) A independent of B?"] = None
+    answers["(c) A independent of B?"] = 'yes'
   
     # type: float
-    answers["(d) P(A=1)"] = None
-    answers["(d) P(B=0)"] = None
-    answers["(d) P(A=1,B=0)"] = None
+    answers["(d) P(A=1)"] = 0.5
+    answers["(d) P(B=0)"] = 0.6
+    answers["(d) P(A=1,B=0)"] = 0.3
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = None
+    answers["(d) A independent of B?"] = 'yes'
   
     # type: float
-    answers["(e) P(A=1,B=1|+)"] = None
-    answers["(e) P(A=1|+)"] = None
-    answers["(e) P(B=1|+)"] = None
+    answers["(e) P(A=1,B=1|+)"] = 0.2
+    answers["(e) P(A=1|+)"] = 0.6
+    answers["(e) P(B=1|+)"] = 0.4
 
     # type: string: 'yes' or 'no'
-    answers["(e) A independent of B given class +?"] = None
+    answers["(e) A independent of B given class +?"] = 'no'
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  None
+    answers["(e) A and B conditionally independent given class +, explain"] =  "In the case of class = +, the joint probability of 0.2 is not equal to the product of the probabilities of 0.24, indicating that A and B are not conditionally independent. For variables to be conditionally independent given the class, the equivalency must exist"
   
     return answers
 # --------------------------------------------------------
